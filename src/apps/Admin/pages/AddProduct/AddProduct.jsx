@@ -2,7 +2,7 @@ import React from 'react';
 import cls from "./AddProduct.module.scss";
 import AddProductForm from "../../../../components/AddProductForm/AddProductForm";
 import { useForm} from "react-hook-form";
-import {createProduct, getAllCategories} from "../../../../configs";
+import {createProduct} from "../../../../configs";
 import useForms from "../../hooks/useForms";
 
 const AddProduct = () => {

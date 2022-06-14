@@ -4,8 +4,7 @@ import {auth} from "../../../services/firebase/firebase";
 
 
 const useIsLogin = () => {
-	const [user, setUser] = React.useState(null)
-	console.log(user)
+	// const [user, setUser] = React.useState(null)
 
 	React.useEffect(() => {
 		const Listen = onAuthStateChanged(auth, currentUser => {
@@ -18,7 +17,6 @@ const useIsLogin = () => {
 	}, [])
 
 
-	console.log(user)
 
 	return {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Outlet, Navigate} from "react-router-dom";
-import useIsLogin from "../../apps/Auth/hooks/useIsLogin";
+// import useIsLogin from "../../apps/Auth/hooks/useIsLogin";
 
 const PrivateRoutes = () => {
 	// const {user} = useIsLogin()
