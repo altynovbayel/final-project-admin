@@ -1,0 +1,34 @@
+.form{
+  width: 90%;
+  min-height: 50vh;
+  background: #f1f1f1;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  h3{
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .error{
+    color: #b20303;
+  }
+
+  button{
+    padding: 0.8rem 3rem;
+    border-radius: 6px;
+    background: #E07153;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:disabled{
+      opacity: 0.5;
+    }
+  }
+}

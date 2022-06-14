@@ -1,0 +1,20 @@
+label{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  gap: 5px;
+
+  span{
+    font-size: 14px;
+    color: darkred;
+  }
+
+  input{
+    width: 100%;
+    outline: none;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+}

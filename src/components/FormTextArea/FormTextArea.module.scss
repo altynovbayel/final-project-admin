@@ -1,0 +1,14 @@
+label{
+  display: flex;
+  flex-direction: column;
+  .textarea{
+    min-height: 70px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    max-height: 150px;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+  }
+}

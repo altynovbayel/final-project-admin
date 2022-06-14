@@ -1,0 +1,13 @@
+.formButton{
+  padding: 0.7rem 2rem;
+  background: #E07153;
+  color: white;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+
+  &:disabled{
+    opacity: 0.5;
+  }
+}
