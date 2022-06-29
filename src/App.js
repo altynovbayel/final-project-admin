@@ -8,7 +8,7 @@ function App() {
 	return (
 		<Routes>
 			<Route element={<PrivateRoutes/>}>
-				<Route path={'/'} element={<AdminPages.AddProduct/>}/>
+				<Route path={'/'} element={<AdminPages.Main/>}/>
 				<Route path={'/add/category'} element={<AdminPages.AddCategories/>}/>
 				<Route path={'*'} element={<Navigate to={'/'}/>}/>
 			</Route>

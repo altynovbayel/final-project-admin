@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bc6a137-a014-4448-bb04-7aec30a0c70f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/apps/Auth/hooks/useIsLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/Auth/hooks/useIsLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PrivateRoutes/PrivateRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoutes/PrivateRoutes.js" afterDir="false" />
+    <list default="true" id="bea7a2a7-d955-4a99-b45e-52a11037f42a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/apps/Admin/pages/AdminMain/AdminMain.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/Admin/pages/AdminMain/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/Admin/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/Admin/pages/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +19,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2ALG5YLbLxPW5l1N6M5BdHYsMSV" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2BFNzGwPq21RKdKkZcQiHJ1XE3c" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -29,9 +31,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/asus/Desktop/frontend/f301/React/finalProject/final-project-admin&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/altyn/OneDrive/Рабочий стол/final project/final-project-admin&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -39,16 +39,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2bc6a137-a014-4448-bb04-7aec30a0c70f" name="Changes" comment="" />
-      <created>1654781268880</created>
+      <changelist id="bea7a2a7-d955-4a99-b45e-52a11037f42a" name="Changes" comment="" />
+      <created>1656498134615</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1654781268880</updated>
-      <workItem from="1654781270842" duration="601000" />
-      <workItem from="1654859208109" duration="1842000" />
-      <workItem from="1654879346890" duration="3652000" />
-      <workItem from="1655091595578" duration="1850000" />
-      <workItem from="1655096541114" duration="47160000" />
+      <updated>1656498134615</updated>
+      <workItem from="1656498138493" duration="2570000" />
+      <workItem from="1656527528329" duration="2835000" />
     </task>
     <servers />
   </component>
