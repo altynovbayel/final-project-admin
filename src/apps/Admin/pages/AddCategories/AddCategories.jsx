@@ -2,6 +2,7 @@ import React from 'react';
 import FormButton from "../../../../components/UI/FormButton/FormButton";
 import cls from "./AddCategories.module.scss";
 import {createCategory} from "../../../../configs";
+import useForms from "../../hooks/useForms";
 
 
 
@@ -16,10 +17,10 @@ const AddCategories = () => {
 			label: categoryTitle
 		}
 		console.log(data)
-		createCategory(data).then(r => {
-			console.log(r)
-		})
+		createCategory(data).then()
 	}
+  
+  const {categories} = useForms()
 
 	return (
 		<div>
@@ -32,11 +33,13 @@ const AddCategories = () => {
 						type="text"
 						value={category}
 						onChange={e => setCategory(e.target.value)}
+            placeholder={'category in base'}
 					/>
 					<input
 						type="text"
 						value={categoryTitle}
 						onChange={e => setCategoryTitle(e.target.value)}
+            placeholder={'category title'}
 					/>
 				</div>
 				<div className={cls.formFooter}>

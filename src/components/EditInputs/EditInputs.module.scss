@@ -1,0 +1,17 @@
+.container{
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  margin: 0 auto 10px;
+  align-items: center;
+  p{
+    flex:1;
+  }
+  input{
+    flex: 2;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #2c3e50;
+  }
+}

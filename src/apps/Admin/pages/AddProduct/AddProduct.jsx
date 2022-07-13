@@ -2,8 +2,10 @@ import React from 'react';
 import cls from "./AddProduct.module.scss";
 import AddProductForm from "../../../../components/AddProductForm/AddProductForm";
 import { useForm} from "react-hook-form";
-import {createProduct} from "../../../../configs";
+import {createProduct, getAllProducts} from "../../../../configs";
 import useForms from "../../hooks/useForms";
+import BtnRoutes from "../../../../components/BtnRoutes";
+import Card from "../../../../components/Card";
 
 const AddProduct = () => {
 	const {
@@ -19,8 +21,25 @@ const AddProduct = () => {
 	const [chosenCategory, setChosenCategory] = React.useState('')
 	const [chosenProductType, setChosenProductType] = React.useState('')
 
-	console.log(chosenProductType, chosenCategory)
-
+	const [data, setData] = React.useState(null)
+  
+  function getProduct(){
+    getAllProducts().then( r => {
+      const base = Object.entries(r.data).map(([id, item]) => {
+        return {
+          id,
+          ...item
+        }
+      })
+      
+      setData(base)
+    })
+  }
+  
+  React.useEffect(() => {
+    getProduct()
+  }, [])
+  
 	const handleChangeCategory = e => setChosenCategory(e.target.value)
 	const handleChangeProductType = e => setChosenProductType(e.target.value)
 	const findChosenCategory = React.useCallback((categories) => {
@@ -40,26 +59,28 @@ const AddProduct = () => {
 			count: 0
 		}
 		createProduct(newData)
-			.then(r => {
-			console.log(r)
-		})
+			.then(r => r && getProduct())
 			.finally(() => reset())
 	}
-
+  
+  if(!data) return <h2>.......</h2>
 	if (!categories) return <h1>loading</h1>
 	return (
-		<div className={cls.container}>
-			<AddProductForm
-				register={register}
-				errors={errors}
-				isValid={isValid}
-				handleSubmit={handleSubmit}
-				submitHandler={submitHandler}
-				handleChangeCategory={handleChangeCategory}
-				handleChangeProductType={handleChangeProductType}
-				categoriesOptions={categories}
-			/>
-		</div>
+    <React.Fragment>
+      <div className={cls.container}>
+        <AddProductForm
+          register={register}
+          errors={errors}
+          isValid={isValid}
+          handleSubmit={handleSubmit}
+          submitHandler={submitHandler}
+          handleChangeCategory={handleChangeCategory}
+          handleChangeProductType={handleChangeProductType}
+          categoriesOptions={categories}
+        />
+      </div>
+      <Card productList={data} getBase={getProduct}/>
+    </React.Fragment>
 	);
 };
 
