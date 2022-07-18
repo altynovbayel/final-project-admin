@@ -1,4 +1,4 @@
-label{
+.text{
   display: flex;
   flex-direction: column;
   .textarea{
@@ -10,5 +10,7 @@ label{
     outline: none;
     padding: 10px;
     font-size: 15px;
+    width: 90%;
+    margin: 0 auto;
   }
 }

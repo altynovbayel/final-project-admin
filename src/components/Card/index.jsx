@@ -4,8 +4,10 @@ import {RiEdit2Line} from "react-icons/ri";
 import {BsFillTrashFill} from "react-icons/bs";
 import EditWindow from "../EditWindow";
 import {removeProduct} from "../../configs";
+import useAlert from "../../hooks/useAlert";
 
 function Card({productList, getBase}) {
+  const {actions} = useAlert()
   const [isOpen, setIsOpen ] = React.useState(false)
   const [productId, setProductId] = React.useState('')
   function removeCard(id){
@@ -44,7 +46,10 @@ function Card({productList, getBase}) {
                 {isOpen && <EditWindow setIsOpen={setIsOpen} id={productId} data={productList} getBase={getBase}/>}
                 <button
                   className={c.remove}
-                  onClick={() => removeCard(id)}
+                  onClick={() => {
+                    actions.sweetAlert('удаляется')
+                    removeCard(id)
+                  }}
                 >
                   <BsFillTrashFill/>
                 </button>

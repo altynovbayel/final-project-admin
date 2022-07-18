@@ -1,5 +1,4 @@
 import React from 'react';
-import BtnRoutes from "../../../../components/BtnRoutes";
 
 const Main = () => (
   <React.Fragment>

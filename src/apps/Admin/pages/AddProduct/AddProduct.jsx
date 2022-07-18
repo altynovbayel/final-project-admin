@@ -4,8 +4,8 @@ import AddProductForm from "../../../../components/AddProductForm/AddProductForm
 import { useForm} from "react-hook-form";
 import {createProduct, getAllProducts} from "../../../../configs";
 import useForms from "../../hooks/useForms";
-import BtnRoutes from "../../../../components/BtnRoutes";
 import Card from "../../../../components/Card";
+import Loader from "../../../../components/Loader/Loader";
 
 const AddProduct = () => {
 	const {
@@ -63,8 +63,10 @@ const AddProduct = () => {
 			.finally(() => reset())
 	}
   
-  if(!data) return <h2>.......</h2>
-	if (!categories) return <h1>loading</h1>
+  
+  
+  if(!data) return <Loader/>
+	if (!categories) return <Loader/>
 	return (
     <React.Fragment>
       <div className={cls.container}>

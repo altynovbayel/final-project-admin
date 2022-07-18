@@ -4,7 +4,7 @@ import cls from "./FormTextArea.module.scss";
 
 const FormTextArea = ({register, registerName, inputTitle, type, errors}) => {
 	return (
-		<label>
+		<label className={cls.text}>
 			<span>{errors?.message}	</span>
 			<textarea
 				className={cls.textarea}

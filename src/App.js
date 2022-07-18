@@ -16,7 +16,9 @@ function App() {
           <Route path={'/add/category'} element={<AdminPages.AddCategories/>}/>
           <Route path={'/add/products'} element={<AdminPages.AddProduct/>}/>
           <Route path={'/edit/contacts'} element={<AdminPages.EditContacts/>}/>
-          <Route path={'*'} element={<Navigate to={'/'}/>}/>
+          <Route path={'/orders'} element={<AdminPages.Orders/>}/>
+          <Route path={'/orders/:user/:product'} element={<AdminPages.MoreOrders/>}/>
+          <Route path={'*'} element={<Navigate to={'/'}/>} />
         </Route>
         <Route path={'/user/login'} element={<AuthPages.Login/>}/>
         <Route path={'*'} element={<Navigate to={'/'}/>}/>

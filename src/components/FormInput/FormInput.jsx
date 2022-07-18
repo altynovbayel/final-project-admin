@@ -1,9 +1,9 @@
 import React from 'react';
-import "./FormInput.module.scss";
+import cls from  "./FormInput.module.scss";
 
 const FormInput = ({register, registerName, inputTitle, type, errors}) => {
 	return (
-		<label>
+		<label className={cls.text}>
 			<span>{errors?.message}</span>
 			<input
 				type={type}

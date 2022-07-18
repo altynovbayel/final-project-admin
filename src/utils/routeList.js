@@ -19,4 +19,9 @@ export const routeList = [
     route: '/edit/contacts',
     text: 'Контакты',
   },
+  {
+    id:5,
+    route: '/orders',
+    text: 'Заказы',
+  },
 ]
