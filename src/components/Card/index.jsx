@@ -18,7 +18,6 @@ function Card({productList, getBase}) {
       <div className={c.container}>
         {
           productList.map(({ images, productName, price, id }) => (
-            
             <div key={id} className={c.card}>
               <div className={c.card_img}>
                 <img src={images[0]} alt='img' />
