@@ -1,0 +1,17 @@
+.row{
+  display: flex;
+  margin-bottom: 50px;
+  .btn{
+    background-color: #cccccc;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    .link{
+      width: 100%;
+      color: white;
+    }
+    .linkActive{
+      color: black;
+    }
+  }
+}
